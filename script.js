@@ -1,10 +1,18 @@
 window.addEventListener("load",
 document.getElementById("form1").onsubmit=function() {
-           q1 = parseInt(document.querySelector('input[name = "question"]:checked').value);
-	   q2 = parseInt(document.querySelector('input[name = "question2"]:checked').value);
-	   q3 = parseInt(document.querySelector('input[name = "question3"]:checked').value);
-	   q4 = parseInt(document.querySelector('input[name = "question4"]:checked').value);
-	   result = q1 + q2 + q3 + q4;
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	   
+	   
+	   result = variable + sub + con + ifstate;
+	   
 	document.getElementById("grade").innerHTML = result;
-  return false;}
+	   
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
 );
