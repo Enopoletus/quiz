@@ -7,5 +7,5 @@ x5 = parseFloat(document.querySelector('input[name="question5"]:checked').value)
 x6 = parseFloat(document.querySelector('input[name="question6"]:checked').value);
 var arrs=[x1, x2, x3, x4, x5, x6]
 var arrsum = arrs.reduce((a, b) => a + b, 0)
-document.getElementById("grade").innerHTML = 100*String((arrsum)/(arrs.length);}
+document.getElementById("grade").innerHTML = 100*String((arrsum)/(arrs.length));}
 );
