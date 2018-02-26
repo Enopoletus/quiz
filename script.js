@@ -1,11 +1,10 @@
 window.addEventListener("click", function nine(){
-x1 = parseFloat(document.querySelector('input[name="question1"]:checked').value);
-x2 = parseFloat(document.querySelector('input[name="question2"]:checked').value);
-x3 = parseFloat(document.querySelector('input[name="question3"]:checked').value);
-x4 = parseFloat(document.querySelector('input[name="question4"]:checked').value);
-x5 = parseFloat(document.querySelector('input[name="question5"]:checked').value);
-x6 = parseFloat(document.querySelector('input[name="question6"]:checked').value);
-var arrs=[x1, x2, x3, x4, x5, x6]
-var arrsum = arrs.reduce((a, b) => a + b, 0)
-document.getElementById("grade").innerHTML = 100*String((arrsum)/(arrs.length));}
+let array = [];
+const exl = document.getElementsByClassName('answ');
+for(let i = 0; i < exl.length; i++) {
+if (exl[i].checked){ 
+let zed = exl[i];
+array.push(parseFloat(zed.value));
+var arrsum = array.reduce((a, b) => a + b, 0);
+document.getElementById("grade").innerHTML = 100*String((arrsum)/(array.length));}}}
 );
