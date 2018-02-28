@@ -1,6 +1,5 @@
 window.addEventListener("click", function n8ne(){
 let arr8y = [];
-let arr7y = [];
 const exl = document.getElementsByClassName('answ');
 for(let i = 0; i < exl.length; i++) {
 if (exl[i].checked){
