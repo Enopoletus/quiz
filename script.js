@@ -9,7 +9,7 @@ document.getElementById("grade").innerHTML = 100*String((arrsum)/(arr8y.length))
 var divs = document.getElementById('form1').children;
 var numTabs = 0;
 for(let x = 0; x < divs.length; x++) {
-	if (divs[x].tagName.indexOf('p') != -1)
+	if (divs[x].tagName.indexOf('P') != -1)
 		numTabs++;}
 document.getElementById("c0unt").innerHTML = (String(arr8y.length));
 document.getElementById("c00unt").innerHTML = (String(numTabs));
