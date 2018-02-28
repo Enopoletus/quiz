@@ -6,7 +6,7 @@ if (exl[i].checked){
 arr8y.push(parseFloat(exl[i].value));}};
 const arrsum = arr8y.reduce((a, b) => a + b, 0);
 document.getElementById("grade").innerHTML = 100*String((arrsum)/(arr8y.length));
-	if (document.getElementsByTagName('form1').children){
+	for (document.getElementById('form1').children){
 var divs = document.getElementsByTagName('input');
 var numTabs = 0;
 for (var i = 0; i < divs.length; i++) {
