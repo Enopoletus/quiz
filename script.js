@@ -9,4 +9,14 @@ document.getElementById("grade").innerHTML = 100*String((arrsum)/(arr8y.length))
 var numTabs=document.getElementById("form1").getElementsByTagName("P").length;
 document.getElementById("c0unt").innerHTML = (String(arr8y.length));
 document.getElementById("c00unt").innerHTML = (String(numTabs));
+let arr6y = [];
+const exl2 = document.getElementsByClassName('answ2');
+for(let i = 0; i < exl.length; i++) {
+if (exl2[i].checked){
+arr6y.push(parseFloat(exl2[i].value));}};
+const arrsum2 = arr6y.reduce((a, b) => a + b, 0);
+document.getElementById("grade2").innerHTML = 100*String((arrsum2)/(arr6y.length));
+var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
+document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
+document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 });
