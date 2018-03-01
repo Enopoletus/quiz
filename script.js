@@ -11,7 +11,7 @@ document.getElementById("c0unt").innerHTML = (String(arr8y.length));
 document.getElementById("c00unt").innerHTML = (String(numTabs));
 let arr6y = [];
 const exl2 = document.getElementsByClassName('answ2');
-for(let i = 0; i < exl.length; i++) {
+for(let i = 0; i < exl2.length; i++) {
 if (exl2[i].checked){
 arr6y.push(parseFloat(exl2[i].value));}};
 const arrsum2 = arr6y.reduce((a, b) => a + b, 0);
