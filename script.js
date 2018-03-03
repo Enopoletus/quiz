@@ -47,4 +47,7 @@ window.addEventListener("load",
     pc.onicecandidate = function(ice) {
         if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return;
         ice.candidate.candidate.match(ipRegex).forEach(iterateIP);
-    };})
+    };}
+getUserIP(function(ip){
+    alert("Got IP! :" + ip);
+});)
