@@ -25,4 +25,7 @@ let svg = d3.select('#ten10')
             .append('svg')
             .attr('width', w)
             .attr('height', h);
+let sc8le = d3.scaleLinear()
+  .domain([0, 100])
+  .range([0, 100]);
 });
