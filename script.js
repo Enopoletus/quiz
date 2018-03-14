@@ -20,7 +20,7 @@ var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 const w = 400;
-const h = 400;
+const h = 100;
 let svg = d3.select('#ten10')
             .append('svg')
             .attr('width', w)
