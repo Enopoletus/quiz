@@ -24,7 +24,7 @@ window.addEventListener("load", handler);
 function handler() {
 const w = (screen.width)/3;
 const h = (screen.width)/3;
-const svg = d3.select("#ten10")
+const svg = d3.select("ten10")
             .append('svg')
             .attr('width', w)
             .attr('height', h);
