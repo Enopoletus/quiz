@@ -36,8 +36,9 @@ const x_axis = d3.axisTop()
             .scale(xscale);
 const y_axis = d3.axisLeft()
             .scale(yscale);
+const xaxistranslate=h/2+10;
 svg.append("g")
-       .attr("transform", "translate(50, " + h/2+10  +")")
+       .attr("transform", "translate(100, " + xaxistranslate +")")
        .call(x_axis);
 svg.append("g")
        .attr("transform", "translate(100, 10)")
