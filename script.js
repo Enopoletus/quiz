@@ -19,8 +19,8 @@ document.getElementById("grade2").innerHTML = 100*String((arrsum2)/(arr6y.length
 var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
-const w = 400;
-const h = 100;
+const w = (screen.width)/3;
+const h = (screen.width)/3;
 let svg = d3.select("#ten10")
             .append('svg')
             .attr('width', w)
