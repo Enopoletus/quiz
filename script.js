@@ -22,15 +22,24 @@ document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 const w = (screen.width)/3;
 const h = (screen.width)/3;
 var data = [10, 15, 20, 25, 30];
-let svg = d3.select("#ten10")
+const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', w)
             .attr('height', h);
+const y_axis = d3.axisLeft()
+               .scale(scale);
+
+const x_axis = d3.axisBottom()
+                   .scale(scale2);
 var scale = d3.scaleLinear()
               .domain([d3.min(data), d3.max(data)])
               .range([h/2, 0]);
-var y_axis = d3.axisLeft()
-               .scale(scale);
+const scale2 = d3.scaleLinear()
+              .domain([d3.min(data), d3.max(data)])
+              .range([0, w - 100]);
+
+svg.append("g")
+       .call(x_axis);
 svg.append("g")
        .attr("transform", "translate(50, 10)")
        .call(y_axis);
