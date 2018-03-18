@@ -31,17 +31,16 @@ const yscale = d3.scaleLinear()
             .range([h, 0]);
 const xscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([0, h]);
+            .range([0, w]);
 const x_axis = d3.axisTop()
             .scale(xscale);
 const y_axis = d3.axisLeft()
             .scale(yscale);
-const xAxisTranslate = h/2 + 10;
 svg.append("g")
-       .attr("transform", "translate(50, " + xAxisTranslate  +")")
+       .attr("transform", "translate(50, " + h/2+10  +")")
        .call(x_axis);
 svg.append("g")
-       .attr("transform", "translate(50, 10)")
+       .attr("transform", "translate(100, 10)")
        .call(y_axis);
 
 });
