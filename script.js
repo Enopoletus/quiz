@@ -20,7 +20,7 @@ var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 });
-window.addEventListener("click", handler);
+window.addEventListener("load", handler);
 function handler(e) {
 	e.target.removeEventListener(e.type, arguments.callee);
 const w = (screen.width)/3;
