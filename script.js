@@ -19,23 +19,23 @@ document.getElementById("grade2").innerHTML = 100*String((arrsum2)/(arr6y.length
 var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
+//--------------D3 chart goes below here------------------------------------------------
 const w = (screen.width)/3;
 const h = (screen.width)/3;
-var data = [10, 15, 20, 25, 30];
 const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', w)
             .attr('height', h);
-const scale = d3.scaleLinear()
-            .domain([d3.min(data), d3.max(data)])
+const yscale = d3.scaleLinear()
+            .domain([0, 100])
             .range([h/2, 0]);
-const scale2 = d3.scaleLinear()
-            .domain([d3.min(data), d3.max(data)])
+const xscale = d3.scaleLinear()
+            .domain([0, 100])
             .range([0, w - 100]);
 const x_axis = d3.axisBottom()
-            .scale(scale2);
+            .scale(xscale);
 const y_axis = d3.axisLeft()
-            .scale(scale);
+            .scale(yscale);
 const xAxisTranslate = h/2 + 10;
 svg.append("g")
        .attr("transform", "translate(50, " + xAxisTranslate  +")")
