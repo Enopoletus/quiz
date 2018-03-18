@@ -28,20 +28,19 @@ const svg = d3.select("#ten10")
             .attr('height', h);
 const yscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([h, 0]);
+            .range([(h*.8), 0]);
 const xscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([0, w]);
+            .range([0, (w*.8)]);
 const x_axis = d3.axisTop()
             .scale(xscale);
 const y_axis = d3.axisLeft()
             .scale(yscale);
-const xaxistranslate=50;
 svg.append("g")
-       .attr("transform", "translate(50, " + xaxistranslate +")")
+       .attr("transform", "translate(30, 30)")
        .call(x_axis);
 svg.append("g")
-       .attr("transform", "translate(50, 50)")
+       .attr("transform", "translate(30, 30)")
        .call(y_axis);
 
 });
