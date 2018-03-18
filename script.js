@@ -36,12 +36,12 @@ const x_axis = d3.axisTop()
             .scale(xscale);
 const y_axis = d3.axisLeft()
             .scale(yscale);
-const xaxistranslate=h/2+10;
+const xaxistranslate=h+10;
 svg.append("g")
-       .attr("transform", "translate(20, " + xaxistranslate +")")
+       .attr("transform", "translate(50, " + xaxistranslate +")")
        .call(x_axis);
 svg.append("g")
-       .attr("transform", "translate(20, 50)")
+       .attr("transform", "translate(50, 50)")
        .call(y_axis);
 
 });
