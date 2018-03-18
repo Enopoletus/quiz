@@ -37,14 +37,14 @@ const xscale = d3.scaleLinear()
             .range([0, (w*.8)])
 const x_axis = d3.axisTop()
             .scale(xscale)
-            .style("fill", "lightyellow");
 const y_axis = d3.axisLeft()
             .scale(yscale)
-            .style("fill", "lightyellow");
 svg.append("g")
        .attr("transform", "translate(40, 40)")
-       .call(x_axis);
+       .call(x_axis)
+       .style("fill", "lightyellow");
 svg.append("g")
        .attr("transform", "translate(40, 40)")
-       .call(y_axis);
+       .call(y_axis)
+       .style("fill", "lightyellow");
 };
