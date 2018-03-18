@@ -47,4 +47,5 @@ svg.append("g")
        .attr("transform", "translate(40, 40)")
        .call(y_axis)
        .style("fill", "lightyellow");
+d3.selectAll("text").style("fill","lightyellow"); 
 };
