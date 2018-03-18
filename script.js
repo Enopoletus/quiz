@@ -30,7 +30,7 @@ const svg = d3.select("#ten10")
             .attr('height', h);
 const yscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([(h*.8), 0]);
+            .range([0, (h*.8)]);
 const xscale = d3.scaleLinear()
             .domain([0, 100])
             .range([0, (w*.8)]);
