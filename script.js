@@ -28,10 +28,10 @@ const svg = d3.select("#ten10")
             .attr('height', h);
 const yscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([h/2, 0]);
+            .range([h, 0]);
 const xscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([0, w - 100]);
+            .range([0, h]);
 const x_axis = d3.axisBottom()
             .scale(xscale);
 const y_axis = d3.axisLeft()
