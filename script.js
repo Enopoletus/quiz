@@ -32,7 +32,7 @@ const yscale = d3.scaleLinear()
 const xscale = d3.scaleLinear()
             .domain([0, 100])
             .range([0, h]);
-const x_axis = d3.axisBottom()
+const x_axis = d3.axisTop()
             .scale(xscale);
 const y_axis = d3.axisLeft()
             .scale(yscale);
