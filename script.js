@@ -28,6 +28,7 @@ const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', w)
             .attr('height', h);
+           
 const yscale = d3.scaleLinear()
             .domain([0, 100])
             .range([0, (h*.8)]);
@@ -44,5 +45,6 @@ svg.append("g")
 svg.append("g")
        .attr("transform", "translate(40, 40)")
        .call(y_axis);
-d3.selectAll("#ten10").attr("fill", "lightyellow");
+d3.select("#ten10")
+            .attr("fill", "lightyellow");
 };
