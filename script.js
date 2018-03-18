@@ -21,8 +21,7 @@ document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 });
 window.addEventListener("load", handler);
-function handler(e) {
-	e.target.removeEventListener(e.type, arguments.callee);
+function handler() {
 const w = (screen.width)/3;
 const h = (screen.width)/3;
 const svg = d3.select("#ten10")
