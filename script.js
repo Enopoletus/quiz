@@ -28,7 +28,7 @@ let svg = d3.select("#ten10")
             .attr('height', h);
 var scale = d3.scaleLinear()
               .domain([d3.min(data), d3.max(data)])
-              .range([height/2, 0]);
+              .range([h/2, 0]);
 var y_axis = d3.axisLeft()
                .scale(scale);
 svg.append("g")
