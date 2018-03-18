@@ -26,5 +26,3 @@ let svg = d3.select("#ten10")
             .attr('width', w)
             .attr('height', h);
 });
-
-});
