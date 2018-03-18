@@ -31,10 +31,12 @@ const svg = d3.select("#ten10")
             .style("fill", "lightyellow");
 const yscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([0, (h*.8)]);
+            .range([0, (h*.8)])
+            .style("fill", "lightyellow");
 const xscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([0, (w*.8)]);
+            .range([0, (w*.8)])
+            .style("fill", "lightyellow");
 const x_axis = d3.axisTop()
             .scale(xscale);
 const y_axis = d3.axisLeft()
