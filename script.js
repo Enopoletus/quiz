@@ -28,7 +28,7 @@ const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', w)
             .attr('height', h);
-            .style('fill', 'darkOrange')
+            .attr('fill', 'darkOrange');
 const yscale = d3.scaleLinear()
             .domain([0, 100])
             .range([0, (h*.8)]);
