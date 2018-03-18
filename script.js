@@ -26,7 +26,7 @@ const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', w)
             .attr('height', h);
-var scale = d3.scaleLinear()
+const scale = d3.scaleLinear()
             .domain([d3.min(data), d3.max(data)])
             .range([h/2, 0]);
 const scale2 = d3.scaleLinear()
@@ -36,7 +36,9 @@ const x_axis = d3.axisBottom()
             .scale(scale2);
 const y_axis = d3.axisLeft()
             .scale(scale);
+const xAxisTranslate = h/2 + 10;
 svg.append("g")
+       .attr("transform", "translate(50, " + xAxisTranslate  +")")
        .call(x_axis);
 svg.append("g")
        .attr("transform", "translate(50, 10)")
