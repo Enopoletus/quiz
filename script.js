@@ -44,4 +44,5 @@ svg.append("g")
 svg.append("g")
        .attr("transform", "translate(40, 40)")
        .call(y_axis);
+d3.selectAll("#ten10").attr("fill", "lightyellow");
 };
