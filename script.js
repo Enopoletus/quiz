@@ -38,10 +38,10 @@ const y_axis = d3.axisLeft()
             .scale(yscale);
 const xaxistranslate=h/2+10;
 svg.append("g")
-       .attr("transform", "translate(0, " + xaxistranslate +")")
+       .attr("transform", "translate(10, " + xaxistranslate +")")
        .call(x_axis);
 svg.append("g")
-       .attr("transform", "translate(0, 10)")
+       .attr("transform", "translate(10, 10)")
        .call(y_axis);
 
 });
