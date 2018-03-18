@@ -37,10 +37,10 @@ const x_axis = d3.axisTop()
 const y_axis = d3.axisLeft()
             .scale(yscale);
 svg.append("g")
-       .attr("transform", "translate(30, 30)")
+       .attr("transform", "translate(40, 40)")
        .call(x_axis);
 svg.append("g")
-       .attr("transform", "translate(30, 30)")
+       .attr("transform", "translate(40, 40)")
        .call(y_axis);
 
 });
