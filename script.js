@@ -48,7 +48,7 @@ svg.append("g")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
-svg.select('circle')		
+svg.append('circle')		
     .attr('r', 40)
     .transition()
     .duration(2000)
