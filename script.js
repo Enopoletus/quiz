@@ -49,8 +49,7 @@ svg.append("g")
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
 svg.append('circle')		
-    .attr('r', 40)
-    .transition()
-    .duration(2000)
-    .attr('r', 20)
+    .attr('r', 10)
+    .attr('cx', 50)
+    .attr('cy', 50)
 };
