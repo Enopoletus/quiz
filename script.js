@@ -48,8 +48,10 @@ svg.append("g")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
-svg.append('circle')		
+svg.append('circle')
+    .attr("transform", "translate(40, 40)")
     .attr('r', 10)
     .attr('cx', 50)
     .attr('cy', 50)
+    .style("fill", "lightgreen");
 };
