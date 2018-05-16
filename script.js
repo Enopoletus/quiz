@@ -39,6 +39,7 @@ const x_axis = d3.axisTop()
             .scale(xscale)
 const y_axis = d3.axisLeft()
             .scale(yscale)
+const circle = d3.circle()
 svg.append("g")
        .attr("transform", "translate(40, 40)")
        .call(x_axis)
@@ -47,5 +48,9 @@ svg.append("g")
        .attr("transform", "translate(40, 40)")
        .call(y_axis)
        .style("fill", "lightyellow");
+svg.append("g")
+       .attrs({"r": 73, "cx": 50, "cy": 50})
+       .call("circle")
+       .style("fill", "yellow");
 d3.selectAll("text").style("fill","lightyellow"); 
 };
