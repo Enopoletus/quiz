@@ -55,7 +55,7 @@ d3.selectAll("text").style("fill","lightyellow");
 svg.append('circle')
     .attr("transform", "translate(40, 40)")
     .attr('r', 10)
-    .attr('cx', myapp.score1;))
-    .attr('cy', myapp.score2;)
+    .attr('cx', myapp.score1)
+    .attr('cy', myapp.score2)
     .style("fill", "lightgreen");
 };
