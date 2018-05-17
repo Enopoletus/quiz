@@ -94,6 +94,7 @@ function nameframe(){
 svg.select('text')
      .transition()
      .duration(400)
-     .text(myapp.name);
+     .text(myapp.name)
+     .style("fill","lightred");
 });
 };
