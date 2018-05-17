@@ -52,6 +52,8 @@ svg.append("g")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
+            var id = setInterval(frame, 10);
+function frame(){const myapp=myapp};
 svg.append('circle')
     .attr("transform", "translate(40, 40)")
     .attr('r', 10)
