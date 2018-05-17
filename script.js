@@ -44,16 +44,16 @@ const x_axis = d3.axisTop()
 const y_axis = d3.axisLeft()
             .scale(yscale)
 svg.append("g")
-       .attr("transform", "translate(50, 50)")
+       .attr("transform", "translate(55, 50)")
        .call(x_axis)
        .style("fill", "lightyellow");
 svg.append("g")
-       .attr("transform", "translate(50, 50)")
+       .attr("transform", "translate(55, 50)")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
 svg.append('circle')
-    .attr("transform", "translate(50, 50)")
+    .attr("transform", "translate(55, 50)")
     .attr('r', 10)
     .attr('cx', 0)
     .attr('cy', 0)
@@ -76,7 +76,7 @@ function frame(){
 svg.select('circle')                
     .transition()
     .duration(0)
-    .attr('cx', yscale(myapp.score1))
-    .attr('cy', xscale(myapp.score2));
+    .attr('cx', yscale(myapp.score2))
+    .attr('cy', xscale(myapp.score1));
                 });
 };
