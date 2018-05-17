@@ -84,17 +84,17 @@ svg.select('circle')
 svg.select('text')
      .transition()
      .duration(400)
-     .attr("y", yscale(myapp.score1))
-     .attr("x", xscale(myapp.score2))
+     .attr("y", yscale(myapp.score1)+20)
+     .attr("x", xscale(myapp.score2)+5)
      .style("text-anchor", "start")
-     .style('fill', 'red');
+     .style('fill', 'red')
+     .style('font-weight', 'bold');
                 });
 window.addEventListener("keyup",
 function nameframe(){
 svg.select('text')
      .transition()
      .duration(400)
-     .text(myapp.name)
-     .style('fill', 'red');
+     .text(myapp.name);
 });
 };
