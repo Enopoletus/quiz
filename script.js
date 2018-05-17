@@ -24,6 +24,9 @@ var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 });
+window.addEventListener("keydown", function tixt(){
+myapp.name=document.getElementsByName("name1")[0].value;
+});
 window.addEventListener("load", handler);
 function handler() {
 const w = (screen.width)/2;
@@ -71,6 +74,10 @@ svg.append("text")
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .text("Percent Anti-Imperialist"); 
+svg.append("text")
+      .attr("y", xscale(50))
+      .attr("x", yscale(50))
+      .text('your name');
 window.addEventListener("click",
 function frame(){
 svg.select('circle')                
