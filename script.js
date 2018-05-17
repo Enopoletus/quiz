@@ -75,7 +75,7 @@ window.addEventListener("click",
 function frame(){
 svg.select('circle')                
     .transition()
-    .duration(370)
+    .duration(400)
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
                 });
