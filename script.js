@@ -59,8 +59,8 @@ svg.append('circle')
     .attr('cy', 0)
     .style("fill", "lightgreen");
 svg.append("text")
-      .attr("y", 0 + (w/2))
-      .attr("x",0 - svg.top)
+      .attr("y", 0)
+      .attr("x",0 + (w/2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .text("Value"); 
