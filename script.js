@@ -24,7 +24,7 @@ var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 });
-window.addEventListener("keydown", function tixt(){
+window.addEventListener("keyup", function tixt(){
 myapp.name=document.getElementsByName("name1")[0].value;
 });
 window.addEventListener("load", handler);
@@ -91,7 +91,7 @@ svg.select('text')
      .attr("y", yscale(myapp.score1))
      .attr("x", xscale(myapp.score2))
                 });
-window.addEventListener("keydown",
+window.addEventListener("keyup",
 function nameframe(){
 svg.select('text')
      .transition()
