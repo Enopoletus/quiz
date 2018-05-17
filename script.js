@@ -91,12 +91,14 @@ svg.select('text')
      .duration(400)
      .attr("y", yscale(myapp.score1))
      .attr("x", xscale(myapp.score2))
+     .style("text-anchor", "start");
                 });
 window.addEventListener("keyup",
 function nameframe(){
 svg.select('text')
      .transition()
      .duration(400)
-     .text(myapp.name);
+     .text(myapp.name)
+     .style("text-anchor", "start");
 });
 };
