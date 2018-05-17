@@ -77,8 +77,7 @@ svg.append("text")
 const yourname=svg.append("text")
       .attr("transform", "translate(55, 50)")
       .attr("y", xscale(0))
-      .attr("x", yscale(0))
-      .text('your name');
+      .attr("x", yscale(0));
 window.addEventListener("click",
 function frame(){
 svg.select('circle')                
