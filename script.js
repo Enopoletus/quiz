@@ -60,7 +60,7 @@ svg.append('circle')
     .attr('cx', myappl.score1)
     .attr('cy', myappl.score2)
     .style("fill", "lightgreen");
-                  const circle = svgDoc.select("g").selectAll("circle");
+                  const circle = svg.select("g").selectAll("circle");
                     circle.exit().remove();//remove unneeded circles
                     circle.enter().append("circle")
                 };
