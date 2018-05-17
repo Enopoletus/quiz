@@ -1,7 +1,7 @@
 const myapp={};
 
 window.addEventListener("click", function n8ne(){
-let arr8y = [];
+const arr8y = [];
 const exl = document.getElementsByClassName('answ');
 for(let i = 0; i < exl.length; i++) {
 if (exl[i].checked){
@@ -12,7 +12,7 @@ document.getElementById("grade").innerHTML =myapp.score1;
 var numTabs=document.getElementById("form1").getElementsByTagName("P").length;
 document.getElementById("c0unt").innerHTML = (String(arr8y.length));
 document.getElementById("c00unt").innerHTML = (String(numTabs));
-let arr6y = [];
+const arr6y = [];
 const exl2 = document.getElementsByClassName('answ2');
 for(let i = 0; i < exl2.length; i++) {
 if (exl2[i].checked){
