@@ -59,9 +59,10 @@ svg.append('circle')
     .attr('r', 10)
     .attr('cx', myappl.score1)
     .attr('cy', myappl.score2)
-    .style("fill", "lightgreen");
-                  const circle = svg.select("g").selectAll("circle");
-                    circle.exit().remove();//remove unneeded circles
-                    circle.enter().append("circle")
+    .style("fill", "lightgreen")
+    .transition()
+    .duration(0)
+    .attr('cx', myappl.score1)
+    .attr('cy', myappl.score2);
                 };
 };
