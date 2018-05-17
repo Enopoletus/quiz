@@ -44,26 +44,26 @@ const x_axis = d3.axisTop()
 const y_axis = d3.axisLeft()
             .scale(yscale)
 svg.append("g")
-       .attr("transform", "translate(40, 40)")
+       .attr("transform", "translate(70, 70)")
        .call(x_axis)
        .style("fill", "lightyellow");
 svg.append("g")
-       .attr("transform", "translate(40, 40)")
+       .attr("transform", "translate(70, 70)")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
 svg.append('circle')
-    .attr("transform", "translate(40, 40)")
+    .attr("transform", "translate(70, 70)")
     .attr('r', 10)
     .attr('cx', 0)
     .attr('cy', 0)
     .style("fill", "lightgreen");
-svg.append("text")             
-      .attr("transform",
-            "translate(" + (w/2) + " ," + 
-                           (h + svg.top + 20) + ")")
+svg.append("text")
+      .attr("y", 0 - (w/2))
+      .attr("x",0 - svg.top)
+      .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text("Date");
+      .text("Value"); 
 svg.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - svg.left)
