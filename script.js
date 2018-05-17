@@ -58,12 +58,11 @@ svg.append('circle')
     .attr('cx', 0)
     .attr('cy', 0)
     .style("fill", "lightgreen");
-window.addEventListener("click",
 function frame(){let myappl=myapp;
 svg.select('circle')                
     .transition()
     .duration(0)
     .attr('cx', myappl.score1)
     .attr('cy', myappl.score2);
-                };)
+                };
 };
