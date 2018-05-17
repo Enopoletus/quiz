@@ -53,11 +53,11 @@ svg.append("g")
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
             var id = setInterval(frame, 10);
-function frame(){let myapp=myapp;};
+function frame(){let myappl=myapp;};
 svg.append('circle')
     .attr("transform", "translate(40, 40)")
     .attr('r', 10)
-    .attr('cx', myapp.score1)
-    .attr('cy', myapp.score2)
+    .attr('cx', myappl.score1)
+    .attr('cy', myappl.score2)
     .style("fill", "lightgreen");
 };
