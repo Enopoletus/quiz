@@ -1,4 +1,4 @@
-let myapp={};
+const myapp={};
 
 window.addEventListener("click", function n8ne(){
 let arr8y = [];
