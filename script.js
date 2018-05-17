@@ -1,4 +1,4 @@
-const myapp={};
+let myapp={};
 
 window.addEventListener("click", function n8ne(){
 let arr8y = [];
@@ -53,7 +53,7 @@ svg.append("g")
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
             var id = setInterval(frame, 10);
-function frame(){const myapp{}=myapp{}};
+function frame(){let myapp{}=myapp{}};
 svg.append('circle')
     .attr("transform", "translate(40, 40)")
     .attr('r', 10)
