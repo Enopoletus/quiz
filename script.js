@@ -95,4 +95,5 @@ svg.select(yourname)
      .attr("y", yscale(myapp.score1))
      .attr("x", xscale(myapp.score2))
      .text(myapp.name);
-};
+});
+});
