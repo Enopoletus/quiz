@@ -84,7 +84,7 @@ svg.select('circle')
 svg.select('text')
      .transition()
      .duration(400)
-     .attr("y", yscale(myapp.score1+5))
+     .attr("y", yscale(myapp.score1+8))
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold');
