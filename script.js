@@ -89,7 +89,7 @@ svg.select('circle')
                 });
 window.addEventListener("keydown",
 function nameframe(){
-svg.select(yourname)
+svg.yourname
      .transition()
      .duration(400)
      .attr("y", yscale(myapp.score1))
