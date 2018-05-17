@@ -63,7 +63,7 @@ function frame(){
 svg.select('circle')                
     .transition()
     .duration(0)
-    .attr('cx', myapp.score1)
-    .attr('cy', myapp.score2);
+    .attr('cx', yscale(myapp.score1))
+    .attr('cy', xscale(myapp.score2));
                 });
 };
