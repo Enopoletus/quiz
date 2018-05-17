@@ -74,9 +74,10 @@ svg.append("text")
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .text("Percent Anti-Imperialist"); 
-svg.append("text")
-      .attr("y", xscale(50))
-      .attr("x", yscale(50))
+const yourname=svg.append("text")
+      .attr("transform", "translate(55, 50)")
+      .attr("y", xscale(0))
+      .attr("x", yscale(0))
       .text('your name');
 window.addEventListener("click",
 function frame(){
@@ -86,4 +87,12 @@ svg.select('circle')
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
                 });
+window.addEventListener("keydown",
+function nameframe(){
+svg.select(yourname)
+     .transition()
+     .duration(400)
+     .attr("y", yscale(myapp.score1))
+     .attr("x", xscale(myapp.score2))
+     .text(myapp.name);
 };
