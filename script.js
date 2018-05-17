@@ -61,12 +61,12 @@ svg.append('circle')
 svg.append("text")             
       .attr("transform",
             "translate(" + (w/2) + " ," + 
-                           (h + margin.top + 20) + ")")
+                           (h + svg.top + 20) + ")")
       .style("text-anchor", "middle")
       .text("Date");
 svg.append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
+      .attr("y", 0 - svg.left)
       .attr("x",0 - (h/2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
