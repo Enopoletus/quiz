@@ -56,6 +56,6 @@ svg.append('circle')
     .attr("transform", "translate(40, 40)")
     .attr('r', 10)
     .attr('cx', myapp.score3)
-    .attr('cy', myappl.score4)
+    .attr('cy', myapp.score4)
     .style("fill", "lightgreen");
 };
