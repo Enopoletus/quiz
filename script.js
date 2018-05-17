@@ -85,8 +85,7 @@ svg.select('text')
      .transition()
      .duration(400)
      .attr("y", yscale(myapp.score1+5))
-     .attr("x", xscale(myapp.score2+4))
-     .style("text-anchor", "start")
+     .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold');
                 });
