@@ -86,7 +86,8 @@ svg.select('text')
      .duration(400)
      .attr("y", yscale(myapp.score1))
      .attr("x", xscale(myapp.score2))
-     .style("text-anchor", "start");
+     .style("text-anchor", "start")
+     .style("fill","lightred");
                 });
 window.addEventListener("keyup",
 function nameframe(){
