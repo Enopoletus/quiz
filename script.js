@@ -93,7 +93,6 @@ function nameframe(){
 svg.select('text')
      .transition()
      .duration(400)
-     .text(myapp.name)
-     .style("text-anchor", "start");
+     .text(myapp.name);
 });
 };
