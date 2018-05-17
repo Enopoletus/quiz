@@ -52,14 +52,14 @@ svg.append("g")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
-            var id = setInterval(frame, 10);
-function frame(){let myappl=myapp;
 svg.append('circle')
     .attr("transform", "translate(40, 40)")
     .attr('r', 10)
-    .attr('cx', myappl.score1)
-    .attr('cy', myappl.score2)
+    .attr('cx', 0)
+    .attr('cy', 0)
     .style("fill", "lightgreen");
+            var id = setInterval(frame, 10);
+function frame(){let myappl=myapp;
 svg.select('circle')                
     .transition()
     .duration(0)
