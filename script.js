@@ -86,14 +86,17 @@ svg.select('circle')
     .duration(400)
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
+svg.select('text')
+     .transition()
+     .duration(400)
+     .attr("y", yscale(myapp.score1))
+     .attr("x", xscale(myapp.score2))
                 });
 window.addEventListener("keydown",
 function nameframe(){
 svg.select('text')
      .transition()
      .duration(400)
-     .attr("y", yscale(myapp.score1))
-     .attr("x", xscale(myapp.score2))
      .text(myapp.name);
 });
 };
