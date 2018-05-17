@@ -44,16 +44,16 @@ const x_axis = d3.axisTop()
 const y_axis = d3.axisLeft()
             .scale(yscale)
 svg.append("g")
-       .attr("transform", "translate(55, 55)")
+       .attr("transform", "translate(50, 50)")
        .call(x_axis)
        .style("fill", "lightyellow");
 svg.append("g")
-       .attr("transform", "translate(55, 55)")
+       .attr("transform", "translate(50, 50)")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
 svg.append('circle')
-    .attr("transform", "translate(55, 55)")
+    .attr("transform", "translate(50, 50)")
     .attr('r', 10)
     .attr('cx', 0)
     .attr('cy', 0)
@@ -63,14 +63,14 @@ svg.append("text")
       .attr("x",0 + (w/2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text("Value"); 
+      .text("Percent Right-Wing"); 
 svg.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - svg.left)
       .attr("x",0 - (h/2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text("Value"); 
+      .text("Percent Anti-Imperialist"); 
 window.addEventListener("click",
 function frame(){
 svg.select('circle')                
