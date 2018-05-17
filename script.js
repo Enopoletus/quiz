@@ -26,8 +26,8 @@ document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 });
 window.addEventListener("load", handler);
 function handler() {
-const w = (screen.width)/3;
-const h = (screen.width)/3;
+const w = (screen.width)/2;
+const h = (screen.width)/2;
 const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', w)
@@ -44,22 +44,22 @@ const x_axis = d3.axisTop()
 const y_axis = d3.axisLeft()
             .scale(yscale)
 svg.append("g")
-       .attr("transform", "translate(70, 70)")
+       .attr("transform", "translate(55, 55)")
        .call(x_axis)
        .style("fill", "lightyellow");
 svg.append("g")
-       .attr("transform", "translate(70, 70)")
+       .attr("transform", "translate(55, 55)")
        .call(y_axis)
        .style("fill", "lightyellow");
 d3.selectAll("text").style("fill","lightyellow"); 
 svg.append('circle')
-    .attr("transform", "translate(70, 70)")
+    .attr("transform", "translate(55, 55)")
     .attr('r', 10)
     .attr('cx', 0)
     .attr('cy', 0)
     .style("fill", "lightgreen");
 svg.append("text")
-      .attr("y", 0 - (w/2))
+      .attr("y", 0 + (w/2))
       .attr("x",0 - svg.top)
       .attr("dy", "1em")
       .style("text-anchor", "middle")
