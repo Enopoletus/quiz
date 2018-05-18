@@ -92,6 +92,6 @@ svg.select('text')
 window.addEventListener("keyup",
 function nameframe(){
 svg.select('text')
-     .text(function(){if (myapp.name==undefined){return myapp.name} else {return ""};});
+     .text(function(){if (myapp.name==undefined){return "x"} else {return "y"};});
 });
 };
