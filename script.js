@@ -100,7 +100,6 @@ svg.select("#fifty")
      .style('fill', 'red')
      .style('font-weight', 'bold')
      .text(String(myapp.name));
-                };
 svg.select("#fifty1")
      .transition()
      .duration(400)
