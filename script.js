@@ -92,6 +92,7 @@ svg.select('text')
 window.addEventListener("keyup",
 function nameframe(){
 svg.select('text')
+     .text("")
      .transition()
      .duration(400)
      .text(myapp.name);
