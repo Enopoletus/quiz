@@ -93,6 +93,6 @@ svg.select('text')
 window.addEventListener("keyup",
 function nameframe(){
 svg.select('text')
-     .text(myapp.name);
+     .text(function(){if (myapp.name==undefined){return "x"} else {return myapp.name};});
 });
 };
