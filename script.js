@@ -1,4 +1,7 @@
 const myapp={};
+myapp.score1=0
+myapp.score2=0
+myapp.name=""
 
 window.addEventListener("click", function n8ne(){
 const arr8y = [];
@@ -87,8 +90,7 @@ svg.select('text')
      .attr("y", yscale(myapp.score1+7))
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
-     .style('font-weight', 'bold')
-     .text("");
+     .style('font-weight', 'bold');
                 });
 window.addEventListener("keyup",
 function nameframe(){
