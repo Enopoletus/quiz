@@ -1,6 +1,12 @@
 const myapp={};
-
-window.addEventListener("click", function n8ne(){
+window.addEventListener("load", definitions);
+function definitions(){
+if (myapp.score1==undefined){myapp.score1=50};
+if (myapp.score2==undefined){myapp.score2=50};
+if (myapp.name==undefined){myapp.name=="You"};
+};
+window.addEventListener("click", n8ne);
+function n8ne(){
 const arr8y = [];
 const exl = document.getElementsByClassName('answ');
 for(let i of exl) {
@@ -23,10 +29,11 @@ document.getElementById("grade2").innerHTML = myapp.score2;
 var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
-});
-window.addEventListener("keyup", function tixt(){
+};
+window.addEventListener("keyup", tixit);
+function tixt(){
 myapp.name=document.getElementsByName("name1")[0].value;
-});
+};
 window.addEventListener("load", handler);
 function handler() {
 const w = (screen.width)/2;
@@ -99,7 +106,7 @@ svg.select('circle')
 svg.select("#fifty")
      .transition()
      .duration(400)
-     .attr("y", yscale(myapp.score1-2))
+     .attr("y", yscale(myapp.score1-2.5))
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold')
