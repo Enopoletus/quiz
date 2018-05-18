@@ -73,7 +73,9 @@ svg.append("text")
       .attr("x",0 - (h/2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text("Percent Anti-Imperialist"); 
+      .text("Percent Anti-Imperialist");
+svg.append("text")
+      .text(" ");
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
