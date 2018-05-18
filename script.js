@@ -1,7 +1,7 @@
 const myapp={};
-let myapp.score1=0
-let myapp.score2=0
-let myapp.name=""
+myapp.score1=0;
+myapp.score2=0;
+myapp.name="";
 
 window.addEventListener("click", function n8ne(){
 const arr8y = [];
