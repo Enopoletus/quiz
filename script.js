@@ -58,8 +58,8 @@ d3.selectAll("text").style("fill","lightyellow");
 svg.append('circle')
     .attr("transform", "translate(55, 50)")
     .attr('r', 10)
-    .attr('cx', 0)
-    .attr('cy', 0)
+    .attr('cx', xscale(50))
+    .attr('cy', yscale(50))
     .style("fill", "lightgreen");
 svg.append("text")
       .attr("y", 0)
@@ -79,6 +79,11 @@ svg.append("text")
       .attr("y", yscale(50))
       .attr("x", xscale(50))
       .text(" ");
+svg.append("text")
+      .attr("id", "fifty1")
+      .attr("y", yscale(55))
+      .attr("x", xscale(55))
+      .text(" ")
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
@@ -94,7 +99,16 @@ svg.select("#fifty")
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold')
-     .text(String(myapp.name)+"("+String(myapp.score2)+","+String(myapp.score1)+")");
+     .text(String(myapp.name));
+                };
+svg.select("#fifty1")
+     .transition()
+     .duration(400)
+     .attr("y", yscale(myapp.score1+12))
+     .attr("x", xscale(myapp.score2))
+     .style('fill', 'yellow')
+     .style('font-weight', 'bold')
+     .text("("+String(myapp.score2)+","+String(myapp.score1)+")");
                 };
 };
 
