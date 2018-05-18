@@ -82,7 +82,7 @@ svg.select('circle')
     .duration(400)
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
-const aname=d3.append('text')
+const aname=svg.append('text')
      .transition()
      .duration(400)
      .attr("y", yscale(myapp.score1+7))
