@@ -87,7 +87,7 @@ svg.select('text')
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold')
-     .text(myapp.name);
+     .text(myapp.score1, myapp.score2, myapp.name);
                 };
 };
 
