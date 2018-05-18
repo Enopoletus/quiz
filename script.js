@@ -89,9 +89,7 @@ svg.select('text')
      .style('font-weight', 'bold')
      .transition()
      .duration(400)
-     .text(myapp.score2)
-     .text(myapp.score1)
-     .text(myapp.name);
+     .text(myapp.score2, myapp.score1, myapp.name);
                 };
 };
 
