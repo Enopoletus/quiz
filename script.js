@@ -87,6 +87,8 @@ svg.select('text')
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold')
+     .transition()
+     .duration(400)
      .text(myapp.score2)
      .text(myapp.score1)
      .text(myapp.name);
