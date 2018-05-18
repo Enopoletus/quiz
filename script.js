@@ -82,7 +82,7 @@ svg.select('circle')
     .duration(400)
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
-const aname=svg.append('text')
+svg.append('text')
      .transition()
      .duration(400)
      .attr("y", yscale(myapp.score1+7))
@@ -90,8 +90,7 @@ const aname=svg.append('text')
      .style('fill', 'red')
      .style('font-weight', 'bold')
      .text("");
-svg.select("g")
-     .call(aname)
+svg.select('text')
      .text(myapp.name);
       };
 };
