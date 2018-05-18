@@ -93,5 +93,5 @@ const aname=d3.append('text')
 svg.select("g")
      .call(aname)
      .text(myapp.name);
-                });
+      };
 };
