@@ -87,7 +87,8 @@ svg.select('text')
      .attr("y", yscale(myapp.score1+7))
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
-     .style('font-weight', 'bold');
+     .style('font-weight', 'bold')
+     .text("");
                 });
 window.addEventListener("keyup",
 function nameframe(){
