@@ -1,8 +1,8 @@
 const myapp={};
 window.addEventListener("load", definitions);
 function definitions(){
-if (myapp.score1==NaN){myapp.score1=50};
-if (myapp.score2==NaN){myapp.score2=50};
+if (isNaN(myapp.score1)==true){myapp.score1=50};
+if (isNaN(myapp.score2)==true){myapp.score2=50};
 if (myapp.name==undefined){myapp.name="You"};
 };
 window.addEventListener("click", n8ne);
