@@ -74,14 +74,15 @@ svg.append("text")
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .text("Percent Anti-Imperialist"); 
-window.addEventListener("click",
+window.addEventListener("click", frame);
+window.addEventListener("keyup", frame);
 function frame(){
 svg.select('circle')                
     .transition()
     .duration(400)
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
-svg.append('text')
+const aname=d3.append('text')
      .transition()
      .duration(400)
      .attr("y", yscale(myapp.score1+7))
@@ -89,10 +90,8 @@ svg.append('text')
      .style('fill', 'red')
      .style('font-weight', 'bold')
      .text("");
-                });
-window.addEventListener("keyup",
-function nameframe(){
-svg.select('text')
+svg.select("g")
+     .call(aname)
      .text(myapp.name);
-});
+                });
 };
