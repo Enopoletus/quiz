@@ -91,6 +91,7 @@ svg.select('text')
      .text("");
                 };
 window.addEventListener("keyup", nameframe);
+window.addEventListener("click", nameframe);
 function nameframe(){
 svg.select('text')
      .text(myapp.name);
