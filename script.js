@@ -85,6 +85,8 @@ svg.select('circle')
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
 svg.select('text')
+     .attr("y", 0)
+     .attr("x", 0)
      .transition()
      .duration(400)
      .attr("y", yscale(myapp.score1+7))
