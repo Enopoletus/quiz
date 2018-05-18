@@ -1,5 +1,6 @@
 const myapp={};
-window.addEventListener("load", definitions);
+window.addEventListener("click", definitions);
+window.addEventListener("keyup", definitions);
 function definitions(){
 if (isNaN(myapp.score1)==true){myapp.score1=50};
 if (isNaN(myapp.score2)==true){myapp.score2=50};
