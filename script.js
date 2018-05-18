@@ -1,9 +1,9 @@
 const myapp={};
 window.addEventListener("load", definitions);
 function definitions(){
-if (myapp.score1==undefined){myapp.score1=50};
-if (myapp.score2==undefined){myapp.score2=50};
-if (myapp.name==undefined){myapp.name=="You"};
+if (myapp.score1==NaN){myapp.score1=50};
+if (myapp.score2==NaN){myapp.score2=50};
+if (myapp.name==undefined){myapp.name="You"};
 };
 window.addEventListener("click", n8ne);
 function n8ne(){
