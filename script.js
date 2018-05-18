@@ -89,8 +89,7 @@ svg.append('text')
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold')
-     .text("");
-svg.select('text')
+     .text("")
      .text(myapp.name);
       };
 };
