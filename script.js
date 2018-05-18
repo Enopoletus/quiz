@@ -30,7 +30,7 @@ var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 };
-window.addEventListener("keyup", tixit);
+window.addEventListener("keyup", tixt);
 function tixt(){
 myapp.name=document.getElementsByName("name1")[0].value;
 };
