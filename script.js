@@ -83,12 +83,12 @@ svg.select('circle')
     .attr('cx', yscale(myapp.score2))
     .attr('cy', xscale(myapp.score1));
 svg.select('text')
+     .transition()
+     .duration(400)
      .attr("y", yscale(myapp.score1+7))
      .attr("x", xscale(myapp.score2))
      .style('fill', 'red')
      .style('font-weight', 'bold')
-     .transition()
-     .duration(400)
      .text(String(myapp.name)+"("+String(myapp.score2)+","+String(myapp.score1)+")");
                 };
 };
