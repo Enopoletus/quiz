@@ -75,7 +75,6 @@ svg.append("text")
       .style("text-anchor", "middle")
       .text("Percent Anti-Imperialist"); 
 window.addEventListener("click", frame);
-window.addEventListener("keyup", nameframe);
 function frame(){
 svg.select('circle')                
     .transition()
@@ -91,6 +90,7 @@ svg.append('text')
      .style('font-weight', 'bold')
      .text("");
                 };
+window.addEventListener("keyup", nameframe);
 function nameframe(){
 svg.select('text')
      .text(myapp.name);
