@@ -3,9 +3,9 @@ const myapp={};
 window.addEventListener("click", function n8ne(){
 const arr8y = [];
 const exl = document.getElementsByClassName('answ');
-for(let i=0; i<exl.length; i++) {
-if (exl[i].checked){
-arr8y.push(parseFloat(exl[i].value));}};
+for(let i of exl) {
+if (i.checked){
+arr8y.push(parseFloat(i.value));}};
 const arrsum = arr8y.reduce((a, b) => a + b, 0);
 myapp.score1=100*String((arrsum)/(arr8y.length))
 document.getElementById("grade").innerHTML =myapp.score1;
@@ -14,9 +14,9 @@ document.getElementById("c0unt").innerHTML = (String(arr8y.length));
 document.getElementById("c00unt").innerHTML = (String(numTabs));
 const arr6y = [];
 const exl2 = document.getElementsByClassName('answ2');
-for(let i=0; i<exl2.length; i++) {
-if (exl2[i].checked){
-arr6y.push(parseFloat(exl2[i].value));}};
+for(let i of exl2) {
+if (i.checked){
+arr6y.push(parseFloat(i.value));}};
 const arrsum2 = arr6y.reduce((a, b) => a + b, 0);
 myapp.score2=100*String((arrsum2)/(arr6y.length))
 document.getElementById("grade2").innerHTML = myapp.score2;
