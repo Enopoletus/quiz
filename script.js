@@ -93,21 +93,28 @@ svg.append("text")
       .style("text-anchor", "middle")
       .text(" ")
 d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data){
-       data.forEach(function (i){
+const cucumbers = svg.selectAll("circle")
+  .data(data)
+  .enter()
+  .append("circle")
+  .attr("cx", 0)
+  .attr("cy", 0)
+  .attr("r", 0);
+cucumbers.nodes.forEach(function (i){
 svg.append("text")
-      .attr("id", i.name)
+      .attr("id", i.data.name)
       .attr("transform", "translate(55, 50)")
       .attr("y", yscale(60))
       .attr("x", xscale(60))
       .style("text-anchor", "middle")
       .text();
 svg.append("text")
-      .attr("id", i.right)
+      .attr("id", i.data.right)
       .attr("transform", "translate(55, 50)")
       .attr("y", yscale(65))
       .attr("x", xscale(60))
       .style("text-anchor", "middle")
-      .text(String(i.right)+","+String(i.anti));
+      .text(String(i.data.right)+","+String(i.data.anti));
            });
 });
 window.addEventListener("click", frame);
