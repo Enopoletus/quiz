@@ -34,6 +34,10 @@ myapp.name=document.getElementsByName("name1")[0].value;
 window.addEventListener("load", handler);
 function handler() {
             d3.csv("forms.csv", function(data) {
+                        data.forEach(function(d) {
+    d.right = +d.right;
+    d.anti = +d.anti;
+  });
             console.log(data)});
 const w = (screen.width)/2;
 const h = (screen.width)/2;
