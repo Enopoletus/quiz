@@ -93,7 +93,7 @@ svg.append("text")
       .style("text-anchor", "middle")
       .text(" ")
 d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data){
-       for (let i of data){
+       data.forEach(function (i){
 svg.append("text")
       .attr("id", i.name)
       .attr("transform", "translate(55, 50)")
@@ -108,7 +108,8 @@ svg.append("text")
       .attr("x", xscale(60))
       .style("text-anchor", "middle")
       .text(String(i.right)+","+String(i.anti));
-           };});
+           });
+});
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
