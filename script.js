@@ -100,7 +100,7 @@ const cucumbers = svg.selectAll("circle")
   .attr("cx", 0)
   .attr("cy", 0)
   .attr("r", 0);
-cucumbers.nodes.forEach(function (i){
+cucumbers.nodes().forEach(function (i){
 svg.append("text")
       .attr("id", i.data.name)
       .attr("transform", "translate(55, 50)")
