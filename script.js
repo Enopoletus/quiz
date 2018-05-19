@@ -50,10 +50,6 @@ const x_axis = d3.axisTop()
             .scale(xscale);
 const y_axis = d3.axisLeft()
             .scale(yscale);
-const xValue = function(d) { return d.right;};
-const xMap = function(d) { return xscale(xValue(d));};
-const yValue = function(d) { return d.anti;};
-const yMap = function(d) {return yscale(yValue(d));};
 svg.append("g")
        .attr("transform", "translate(55, 50)")
        .call(x_axis)
