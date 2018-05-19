@@ -107,7 +107,7 @@ svg.append("text")
       .attr("y", yscale(65))
       .attr("x", xscale(60))
       .style("text-anchor", "middle")
-      .text(String(i.right)+","+String(i.anti);
+      .text(String(i.right)+","+String(i.anti));
            };});
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
