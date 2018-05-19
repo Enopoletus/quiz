@@ -97,12 +97,6 @@ svg.append("text")
       .style("text-anchor", "middle")
       .text(" ");
 d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(error, data) {
-  data.forEach(function(d) {
-    d.right = +d.right;
-    d.anti = +d.anti;
-   console.log(d);
-  });
-  // draw dots
   svg.selectAll(".dot")
       .data(data)
     .enter().append("circle")
