@@ -34,7 +34,7 @@ myapp.name=document.getElementsByName("name1")[0].value;
 window.addEventListener("load", handler);
 function handler() {
             d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data){
-            console.log(data)});
+            console.log(data.name)});
 const w = (screen.width)/2;
 const h = (screen.width)/2;
 const svg = d3.select("#ten10")
