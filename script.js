@@ -33,11 +33,7 @@ myapp.name=document.getElementsByName("name1")[0].value;
 };
 window.addEventListener("load", handler);
 function handler() {
-            d3.csv("forms.csv", function(data) {
-                        data.nodes().forEach(function(d) {
-    d.right = +d.right;
-    d.anti = +d.anti;
-  });
+            d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data){
             console.log(data)});
 const w = (screen.width)/2;
 const h = (screen.width)/2;
