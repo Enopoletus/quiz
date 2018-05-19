@@ -33,9 +33,9 @@ myapp.name=document.getElementsByName("name1")[0].value;
 };
 window.addEventListener("load", handler);
 function handler() {
-d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data) {
-  console.log(data[0]);
-});
+d3.text("https://enopoletus.github.io/quiz/forms.csv", function(error, _data){
+            const data = d3.csv.parseRows(_data);
+        });
 const w = (screen.width)/2;
 const h = (screen.width)/2;
 const svg = d3.select("#ten10")
