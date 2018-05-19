@@ -96,7 +96,7 @@ svg.append("text")
       .attr("x", xscale(50))
       .style("text-anchor", "middle")
       .text(" ");
-d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data) {
+d3.csv("https://enopoletus.github.io/quiz/forms.csv").then(function(data){
       data.forEach(function(d) {
       d.right = +d.right;
       d.anti = +d.anti;
