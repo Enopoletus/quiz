@@ -33,8 +33,6 @@ myapp.name=document.getElementsByName("name1")[0].value;
 };
 window.addEventListener("load", handler);
 function handler() {
-            d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data){
-            console.log(data.name)});
 const w = (screen.width)/2;
 const h = (screen.width)/2;
 const svg = d3.select("#ten10")
@@ -91,9 +89,26 @@ svg.append("text")
       .attr("id", "fifty1")
       .attr("transform", "translate(55, 50)")
       .attr("y", yscale(55))
-      .attr("x", xscale(55))
+      .attr("x", xscale(50))
       .style("text-anchor", "middle")
       .text(" ")
+d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data){
+       for (let i of data){
+svg.append("text")
+      .attr("id", i.name)
+      .attr("transform", "translate(55, 50)")
+      .attr("y", yscale(60))
+      .attr("x", xscale(60))
+      .style("text-anchor", "middle")
+      .text();
+svg.append("text")
+      .attr("id", i.right)
+      .attr("transform", "translate(55, 50)")
+      .attr("y", yscale(65))
+      .attr("x", xscale(60))
+      .style("text-anchor", "middle")
+      .text(String(i.right)+","+String(i.anti);
+           };});
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
