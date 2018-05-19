@@ -37,7 +37,7 @@ d3.csv("forms.csv", function(error, data) {
   data.forEach(function(d) {
     d.right = +d.right;
     d.anti = +d.anti;
-    console.log(d);}
+    console.log(d);});
   });
 const w = (screen.width)/2;
 const h = (screen.width)/2;
