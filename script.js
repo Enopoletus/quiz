@@ -110,7 +110,7 @@ d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(error, data) {
       .attr("r", 3.5)
       .attr("cx", xMap)
       .attr("cy", yMap)
-      .style("fill", "lightgreen"});
+      .style("fill", "lightgreen");
 });
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
