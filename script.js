@@ -91,31 +91,26 @@ svg.append("text")
       .attr("y", yscale(55))
       .attr("x", xscale(50))
       .style("text-anchor", "middle")
-      .text(" ")
-d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data){
-const cucumbers = svg.selectAll("circle")
-  .data(data)
-  .enter()
-  .append("circle")
-  .attr("cx", 0)
-  .attr("cy", 0)
-  .attr("r", 0);
-cucumbers.nodes().forEach(function (i){
-svg.append("text")
-      .attr("id", i.data.name)
-      .attr("transform", "translate(55, 50)")
-      .attr("y", yscale(60))
-      .attr("x", xscale(60))
-      .style("text-anchor", "middle")
-      .text();
-svg.append("text")
-      .attr("id", i.data.right)
-      .attr("transform", "translate(55, 50)")
-      .attr("y", yscale(65))
-      .attr("x", xscale(60))
-      .style("text-anchor", "middle")
-      .text(String(i.data.right)+","+String(i.data.anti));
-           });
+      .text(" ");
+const xValue = function(d) { return d.right;}, 
+    xMap = function(d) { return xscale(xValue(d));}, 
+const yValue = function(d) { return d.anti;},
+    yMap = function(d) {return yscale(yValue(d));}, 
+d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(error, data) {
+  data.forEach(function(d) {
+    d.right = +d.right;
+    d.anti = +d.anti;
+   console.log(d);
+  });
+  // draw dots
+  svg.selectAll(".dot")
+      .data(data)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 3.5)
+      .attr("cx", xMap)
+      .attr("cy", yMap)
+      .style("fill", "lightgreen"});
 });
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
