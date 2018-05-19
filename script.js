@@ -42,14 +42,18 @@ const svg = d3.select("#ten10")
             .style("fill", "lightyellow");
 const yscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([0, (h*.8)])
+            .range([0, (h*.8)]);
 const xscale = d3.scaleLinear()
             .domain([0, 100])
-            .range([0, (w*.8)])
+            .range([0, (w*.8)]);
 const x_axis = d3.axisTop()
-            .scale(xscale)
+            .scale(xscale);
 const y_axis = d3.axisLeft()
-            .scale(yscale)
+            .scale(yscale);
+const xValue = function(d) { return d.right;};
+const xMap = function(d) { return xscale(xValue(d));};
+const yValue = function(d) { return d.anti;};
+const yMap = function(d) {return yscale(yValue(d));};
 svg.append("g")
        .attr("transform", "translate(55, 50)")
        .call(x_axis)
@@ -92,10 +96,6 @@ svg.append("text")
       .attr("x", xscale(50))
       .style("text-anchor", "middle")
       .text(" ");
-const xValue = function(d) { return d.right;}, 
-    xMap = function(d) { return xscale(xValue(d));}, 
-const yValue = function(d) { return d.anti;},
-    yMap = function(d) {return yscale(yValue(d));}, 
 d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(error, data) {
   data.forEach(function(d) {
     d.right = +d.right;
