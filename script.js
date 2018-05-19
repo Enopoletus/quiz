@@ -112,6 +112,8 @@ svg.append("text")
       .attr("y", yscale(d.anti-3))
       .attr("x", xscale(d.right))
       .style("text-anchor", "middle")
+      .style("font-size", "12px")
+      .style('fill', 'orange')
       .text(d.name);
 svg.append("text")
       .attr("id", String(d.name)+"2")
@@ -119,6 +121,7 @@ svg.append("text")
       .attr("y", yscale(d.anti+7))
       .attr("x", xscale(d.right))
       .style("text-anchor", "middle")
+      .style("font-size", "10px")
       .text("("+String(d.right)+","+String(d.anti)+")");
   });
 });
