@@ -35,7 +35,7 @@ window.addEventListener("load", handler);
 function handler() {
 d3.text("https://enopoletus.github.io/quiz/forms.csv", function(error, _data){
             const data = d3.csv.parseRows(_data);
-            console.log(data[1])
+            console.log(data);
         });
 const w = (screen.width)/2;
 const h = (screen.width)/2;
