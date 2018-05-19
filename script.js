@@ -100,7 +100,12 @@ d3.csv("https://enopoletus.github.io/quiz/forms.csv").then(function(data){
       data.forEach(function(d) {
       d.right = +d.right;
       d.anti = +d.anti;
-      console.log(d);
+    svg.append('circle')
+    .attr("transform", "translate(55, 50)")
+    .attr('r', 8)
+    .attr('cx', xscale(d.right))
+    .attr('cy', yscale(d.anti))
+    .style("fill", "magenta");
   });
 });
 window.addEventListener("click", frame);
