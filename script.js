@@ -1,11 +1,4 @@
 const myapp={};
-window.addEventListener("click", definitions);
-window.addEventListener("keyup", definitions);
-function definitions(){
-if (isNaN(myapp.score1)==true){myapp.score1=50};
-if (isNaN(myapp.score2)==true){myapp.score2=50};
-if (myapp.name==undefined){myapp.name="You"};
-};
 window.addEventListener("click", n8ne);
 function n8ne(){
 const arr8y = [];
@@ -30,6 +23,9 @@ document.getElementById("grade2").innerHTML = myapp.score2;
 var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
+if (isNaN(myapp.score1)==true){myapp.score1=50};
+if (isNaN(myapp.score2)==true){myapp.score2=50};
+if (myapp.name==undefined){myapp.name="You"};
 };
 window.addEventListener("keyup", tixt);
 function tixt(){
