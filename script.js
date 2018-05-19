@@ -97,7 +97,11 @@ svg.append("text")
       .style("text-anchor", "middle")
       .text(" ");
 d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data) {
-console.log(data.name);
+      data.forEach(function(d) {
+      d.right = +d.right;
+      d.anti = +d.anti;
+      console.log(d);
+  });
 });
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
