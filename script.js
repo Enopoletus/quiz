@@ -96,15 +96,8 @@ svg.append("text")
       .attr("x", xscale(50))
       .style("text-anchor", "middle")
       .text(" ");
-d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(error, data) {
-  svg.selectAll(".dot")
-      .data(data)
-    .enter().append("circle")
-      .attr("class", "dot")
-      .attr("r", 3.5)
-      .attr("cx", xMap)
-      .attr("cy", yMap)
-      .style("fill", "lightgreen");
+d3.csv("https://enopoletus.github.io/quiz/forms.csv", function(data) {
+console.log(data.anti)
 });
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
