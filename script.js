@@ -110,7 +110,7 @@ svg.append("text")
       .attr("x", xscale(d.right))
       .style("text-anchor", "middle")
       .style("font-size", "12px")
-      .style('fill', d3.rgb((d.right*2.55), 245, (d.anti*2.55)))
+      .style('fill', d3.rgb((d.right*2.55), 235, (d.anti*2.55)))
       .style('font-weight', 'bold')
       .text(d.name);
 svg.append("text")
