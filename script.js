@@ -1,5 +1,6 @@
 const myapp={};
 window.addEventListener("click", n8ne);
+window.addEventListener("keyup", n8ne);
 function n8ne(){
 const arr8y = [];
 const exl = document.getElementsByClassName('answ');
