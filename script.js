@@ -10,7 +10,7 @@ arr8y.push(parseFloat(i.value));}};
 const arrsum = arr8y.reduce((a, b) => a + b, 0);
 myapp.score1=100*String((arrsum)/(arr8y.length))
 document.getElementById("grade").innerHTML =myapp.score1;
-var numTabs=document.getElementById("form1").getElementsByTagName("P").length;
+const numTabs=document.getElementById("form1").getElementsByTagName("P").length;
 document.getElementById("c0unt").innerHTML = (String(arr8y.length));
 document.getElementById("c00unt").innerHTML = (String(numTabs));
 const arr6y = [];
@@ -21,7 +21,7 @@ arr6y.push(parseFloat(i.value));}};
 const arrsum2 = arr6y.reduce((a, b) => a + b, 0);
 myapp.score2=100*String((arrsum2)/(arr6y.length))
 document.getElementById("grade2").innerHTML = myapp.score2;
-var numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
+const numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
 document.getElementById("c00unt2").innerHTML = (String(numTabs2));
 if (isNaN(myapp.score1)==true){myapp.score1=50};
