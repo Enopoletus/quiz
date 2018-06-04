@@ -103,16 +103,18 @@ svg.append('circle')
     .attr('cx', xscale(d.right))
     .attr('cy', yscale(d.anti))
     .style("fill", "magenta");
+//adds test takers' names
 svg.append("text")
       .attr("id", d.name)
       .attr("transform", "translate(55, 50)")
       .attr("y", yscale(d.anti-2))
       .attr("x", xscale(d.right))
       .style("text-anchor", "middle")
-      .style("font-size", "12px")
+      .style("font-size", "10px")
       .style('fill', d3.rgb((d.right*2.55), 235, (d.anti*2.55)))
-      .style('font-weight', 'bold')
+      .style('font-weight', 'lighter')
       .text(d.name);
+//adds test takers' scores
 svg.append("text")
       .attr("id", String(d.name)+"2")
       .attr("transform", "translate(55, 50)")
