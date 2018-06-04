@@ -110,9 +110,9 @@ svg.append("text")
       .attr("y", yscale(d.anti-2))
       .attr("x", xscale(d.right))
       .style("text-anchor", "middle")
-      .style("font-size", "10px")
+      .style("font-size", "8px")
       .style('fill', d3.rgb((d.right*2.55), 235, (d.anti*2.55)))
-      .style('font-weight', 'lighter')
+      .style('font-weight', '900')
       .text(d.name);
 //adds test takers' scores
 svg.append("text")
