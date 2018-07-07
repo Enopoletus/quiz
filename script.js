@@ -102,7 +102,7 @@ svg.append('circle')
     .attr('r', 6)
     .attr('cx', xscale(d.right))
     .attr('cy', yscale(d.anti))
-    .style("fill", d3.rgb((d.right*2.55), (d.ssc*255), (d.anti*2.55)));
+    .style("fill", d3.rgb(255, (d.ssc*255), 0));
 //adds test takers' names
 svg.append("text")
       .attr("id", d.name)
