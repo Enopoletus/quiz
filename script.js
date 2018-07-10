@@ -8,7 +8,7 @@ for(let i=0; i<exl.length; i++) {
 if (exl[i].checked){
 arr8y.push(parseFloat(exl[i].value));}};
 const arrsum = arr8y.reduce((a, b) => a + b, 0);
-myapp.score1=100*String((arrsum)/(arr8y.length))
+myapp.score1=(100*String((arrsum)/(arr8y.length))).toFixed(3)
 document.getElementById("grade").innerHTML =myapp.score1;
 const numTabs=document.getElementById("form1").getElementsByTagName("P").length;
 document.getElementById("c0unt").innerHTML = (String(arr8y.length));
@@ -19,7 +19,7 @@ for(let i=0; i<exl2.length; i++) {
 if (exl2[i].checked){
 arr6y.push(parseFloat(exl2[i].value));}};
 const arrsum2 = arr6y.reduce((a, b) => a + b, 0);
-myapp.score2=100*String((arrsum2)/(arr6y.length))
+myapp.score2=(100*String((arrsum2)/(arr6y.length))).toFixed(3)
 document.getElementById("grade2").innerHTML = myapp.score2;
 const numTabs2=document.getElementById("form2").getElementsByTagName("P").length;
 document.getElementById("c0unt2").innerHTML = (String(arr6y.length));
