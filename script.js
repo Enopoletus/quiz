@@ -4,9 +4,9 @@ window.addEventListener("keyup", n8ne);
 function n8ne(){
 const arr8y = [];
 const exl = document.getElementsByClassName('answ');
-for(let i of exl) {
-if (i.checked){
-arr8y.push(parseFloat(i.value));}};
+for(let i=0; i<exl.length; i++) {
+if (exl[i].checked){
+arr8y.push(parseFloat(exl[i].value));}};
 const arrsum = arr8y.reduce((a, b) => a + b, 0);
 myapp.score1=100*String((arrsum)/(arr8y.length))
 document.getElementById("grade").innerHTML =myapp.score1;
