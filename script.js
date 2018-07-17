@@ -73,7 +73,7 @@ svg.append('rectangle')
     .attr("width", xscale(54.3475))
     .attr("height", yscale(42.619))
     .attr("stroke-width", 2)
-    .attr("stroke", "yellow");
+    .attr("fill", "yellow");
 svg.append("text")
       .attr("y", 0)
       .attr("x",0 + (w/2))
