@@ -66,14 +66,14 @@ svg.append('circle')
     .attr('cx', xscale(50))
     .attr('cy', yscale(50))
     .style("fill", "lightgreen");
-svg.append('rectangle')
+svg.append('rect')
     .attr("transform", "translate(55, 50)")
     .attr("x", xscale(29.31))
     .attr("y", yscale(35.9))
     .attr("width", xscale(54.3475))
     .attr("height", yscale(42.619))
     .attr("stroke-width", 2)
-    .attr("fill", "yellow");
+    .attr("stroke", "yellow");
 svg.append("text")
       .attr("y", 0)
       .attr("x",0 + (w/2))
