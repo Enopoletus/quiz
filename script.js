@@ -73,6 +73,7 @@ svg.append('rect')
     .attr("width", xscale(54.3475))
     .attr("height", yscale(42.619))
     .attr("stroke-width", 2)
+    .attr("fill", d3.rgb(124,240,10,0))
     .attr("stroke", "yellow");
 svg.append("text")
       .attr("y", 0)
