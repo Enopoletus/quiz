@@ -66,6 +66,14 @@ svg.append('circle')
     .attr('cx', xscale(50))
     .attr('cy', yscale(50))
     .style("fill", "lightgreen");
+svg.append('line')
+    .attr("transform", "translate(55, 50)")
+    .attr("x1", 5)
+    .attr("y1", 5)
+    .attr("x2", 10)
+    .attr("y2", 10) 
+    .attr("stroke-width", 2)
+    .attr("stroke", "yellow");
 svg.append("text")
       .attr("y", 0)
       .attr("x",0 + (w/2))
@@ -97,6 +105,7 @@ d3.csv("https://enopoletus.github.io/quiz/forms.csv").then(function(data){
       data.forEach(function(d) {
       d.right = +d.right;
       d.anti = +d.anti;
+//adds test takers' score circles
 svg.append('circle')
     .attr("transform", "translate(55, 50)")
     .attr('r', 6)
@@ -126,6 +135,7 @@ svg.append("text")
       .text("("+String(d.right)+","+String(d.anti)+")");
   });
 });
+//frame function actually moves the circle around
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
