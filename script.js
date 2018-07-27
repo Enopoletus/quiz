@@ -66,12 +66,13 @@ svg.append('circle')
     .attr('cx', xscale(50))
     .attr('cy', yscale(50))
     .style("fill", "lightgreen");
+//here be the yellow rectangle
 svg.append('rect')
     .attr("transform", "translate(55, 50)")
-    .attr("x", xscale(29.31))
-    .attr("y", yscale(35.9))
-    .attr("width", xscale(54.3475))
-    .attr("height", yscale(42.619))
+    .attr("x", xscale(26.8))
+    .attr("y", yscale(36.4))
+    .attr("width", xscale(56.35))
+    .attr("height", yscale(42.05))
     .attr("stroke-width", 2)
     .attr("fill", d3.rgb(124,240,10,0))
     .attr("stroke", "yellow");
