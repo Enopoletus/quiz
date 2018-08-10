@@ -34,8 +34,8 @@ myapp.name=document.getElementsByName("name1")[0].value;
 };
 window.addEventListener("load", handler);
 function handler() {
-const w = (screen.width)/2;
-const h = (screen.width)/2;
+const w = (screen.height)*.9;
+const h = (screen.height)*.9;
 const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', (w+50))
