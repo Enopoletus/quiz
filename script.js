@@ -34,8 +34,8 @@ myapp.name=document.getElementsByName("name1")[0].value;
 };
 window.addEventListener("load", handler);
 function handler() {
-const w = Math.max(screen.height, screen.width)*.9;
-const h = Math.max(screen.height, screen.width)*.9;
+const w = Math.min(screen.height, screen.width)*.9;
+const h = Math.min(screen.height, screen.width)*.9;
 const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', (w+50))
@@ -115,7 +115,7 @@ svg.append('circle')
     .attr('cy', yscale(d.anti))
     .style("fill", d3.rgb(255, (d.ssc*255), (d.atlas*255)));
 //adds test takers' names
-const z0=1600/Math.max(screen.height, screen.width)
+const z0=.8*(1600/w)
 svg.append("text")
       .attr("id", d.name)
       .attr("transform", "translate(55, 50)")
