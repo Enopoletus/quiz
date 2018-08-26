@@ -147,7 +147,7 @@ window.addEventListener("keyup", frame);
 function frame(){
 svg.select('circle')
 const myapp.h = Number(document.getElementById("csize").value);
-const myapp.w = h;
+const myapp.w = myapp.h;
 document.getElementById("cdisp").value=w;
 svg.select('svg')
     .attr('width', (myapp.w+50))
