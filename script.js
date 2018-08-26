@@ -36,8 +36,8 @@ myapp.name=document.getElementsByName("name1")[0].value;
 window.addEventListener("load", handler);
 function handler() {
 document.getElementById("csize").value=Math.min(window.innerHeight, window.innerWidth)
-const w = document.getElementById("csize").value;
-const h = document.getElementById("csize").value;
+const h = Number(document.getElementById("csize").value);
+const w = h;
 document.getElementById("cdisp").value=w;
 const svg = d3.select("#ten10")
             .append('svg')
@@ -145,7 +145,13 @@ svg.append("text")
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
-svg.select('circle')         
+svg.select('circle')
+const w = document.getElementById("csize").value;
+const h = document.getElementById("csize").value;
+document.getElementById("cdisp").value=w;
+svg.select('svg')
+    .attr('width', (w+50))
+    .attr('height', h);
     .transition()
     .duration(400)
     .attr('cx', yscale(myapp.score2))
