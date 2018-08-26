@@ -32,10 +32,12 @@ window.addEventListener("keyup", tixt);
 function tixt(){
 myapp.name=document.getElementsByName("name1")[0].value;
 };
+//handler function is for setting up d3
 window.addEventListener("load", handler);
 function handler() {
-const w = Math.min(screen.height, screen.width)*.9;
-const h = Math.min(screen.height, screen.width)*.9;
+document.getElementById("csize").value=Math.min(windew.innerHeight, window.innerWidth)
+const w = document.getElementById("csize").value;
+const h = document.getElementById("csize").value;
 const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', (w+50))
