@@ -149,7 +149,7 @@ svg.select('circle')
 myapp.h = Number(document.getElementById("csize").value);
 myapp.w = myapp.h;
 document.getElementById("cdisp").value=myapp.w;
-svg.select('svg')
+svg.append('g')
     .attr('width', (myapp.w+50))
     .attr('height', myapp.h)
     .classed("svg-container", true)    
