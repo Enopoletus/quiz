@@ -43,10 +43,7 @@ const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', (w+50))
             .attr('height', h)
-            .style("fill", "lightyellow")
-            .classed("svg-container", true)
-            .attr("viewBox", "0 0 600 400")
-            .classed("svg-content-responsive", true); 
+            .style("fill", "lightyellow");
 const yscale = d3.scaleLinear()
             .domain([0, 100])
             .range([0, (h*.8)]);
@@ -154,7 +151,9 @@ myapp.w = myapp.h;
 document.getElementById("cdisp").value=myapp.w;
 svg.select('svg')
     .attr('width', (myapp.w+50))
-    .attr('height', myapp.h);
+    .attr('height', myapp.h)
+    .classed("svg-container", true)    
+    .classed("svg-content-responsive", true); 
 svg.select('circle')
     .transition()
     .duration(400)
