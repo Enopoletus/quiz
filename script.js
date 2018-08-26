@@ -148,7 +148,7 @@ function frame(){
 svg.select('circle')
 myapp.h = Number(document.getElementById("csize").value);
 myapp.w = myapp.h;
-document.getElementById("cdisp").value=w;
+document.getElementById("cdisp").value=myapp.w;
 svg.select('svg')
     .attr('width', (myapp.w+50))
     .attr('height', myapp.h);
