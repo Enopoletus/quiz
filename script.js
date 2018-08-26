@@ -152,6 +152,7 @@ document.getElementById("cdisp").value=w;
 svg.select('svg')
     .attr('width', (w+50))
     .attr('height', h);
+svg.select('circle')
     .transition()
     .duration(400)
     .attr('cx', yscale(myapp.score2))
