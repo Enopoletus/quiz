@@ -43,7 +43,8 @@ const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', (w+50))
             .attr('height', h)
-            .style("fill", "lightyellow");
+            .style("fill", "lightyellow")
+            .classed("svg-container", true);
 const yscale = d3.scaleLinear()
             .domain([0, 100])
             .range([0, (h*.8)]);
