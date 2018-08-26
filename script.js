@@ -146,12 +146,12 @@ window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
 svg.select('circle')
-const h = Number(document.getElementById("csize").value);
-const w = h;
+const myapp.h = Number(document.getElementById("csize").value);
+const myapp.w = h;
 document.getElementById("cdisp").value=w;
 svg.select('svg')
-    .attr('width', (w+50))
-    .attr('height', h);
+    .attr('width', (myapp.w+50))
+    .attr('height', myapp.h);
 svg.select('circle')
     .transition()
     .duration(400)
