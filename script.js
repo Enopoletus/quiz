@@ -38,6 +38,7 @@ function handler() {
 document.getElementById("csize").value=Math.min(window.innerHeight, window.innerWidth)
 const w = document.getElementById("csize").value;
 const h = document.getElementById("csize").value;
+document.getElementById("cdisp").value=w;
 const svg = d3.select("#ten10")
             .append('svg')
             .attr('width', (w+50))
@@ -144,6 +145,12 @@ svg.append("text")
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
+const w = document.getElementById("csize").value;
+const h = document.getElementById("csize").value;
+document.getElementById("cdisp").value=w;
+svg.select('svg')
+    .attr('width', (w+50))
+    .attr('height', h);
 svg.select('circle')                
     .transition()
     .duration(400)
