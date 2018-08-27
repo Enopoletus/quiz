@@ -149,6 +149,7 @@ window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
 svg.remove();
+d3.selectAll("g > *").remove()
 handler();
 svg.select('circle')
     .transition()
