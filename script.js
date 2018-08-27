@@ -146,9 +146,9 @@ window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
 svg.select('circle')
-const h = Math.log(Number(document.getElementById("csize").value));
+const h = Math.exp(Number(Math.log(document.getElementById("csize").value)));
 const w = h;
-document.getElementById("cdisp").value=w;
+document.getElementById("cdisp").value=Math.log(w);
 svg
     .attr('width', (w+50))
     .attr('height', h)
