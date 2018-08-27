@@ -149,11 +149,21 @@ svg.select('circle')
 const h = Number(document.getElementById("csize").value);
 const w = h;
 document.getElementById("cdisp").value=w;
-d3.select("#ten10").select('svg').select('g')
+d3.select("#ten10").select('svg')
     .attr('width', (w+50))
     .attr('height', h)
     .classed("svg-container", true)    
     .classed("svg-content-responsive", true); 
+const yscale = d3.scaleLinear()
+            .domain([0, 100])
+            .range([0, (h*.8)]);
+const xscale = d3.scaleLinear()
+            .domain([0, 100])
+            .range([0, (w*.8)]);
+const x_axis = d3.axisTop()
+            .scale(xscale);
+const y_axis = d3.axisLeft()
+            .scale(yscale);
 svg.select('circle')
     .transition()
     .duration(400)
