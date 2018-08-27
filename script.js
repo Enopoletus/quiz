@@ -149,7 +149,7 @@ svg.select('circle')
 const h = Number(document.getElementById("csize").value);
 const w = h;
 document.getElementById("cdisp").value=w;
-d3.select("#ten10").select('svg').selectAll('*')
+d3.select("#ten10").select('svg').select('g')
     .attr('width', (w+50))
     .attr('height', h)
     .classed("svg-container", true)    
