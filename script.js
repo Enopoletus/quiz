@@ -148,8 +148,7 @@ svg.append("text")
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
-svg.remove();
-d3.selectAll("g > *").remove()
+d3.selectAll("svg").remove();
 handler();
 svg.select('circle')
     .transition()
