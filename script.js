@@ -149,11 +149,12 @@ svg.select('circle')
 const h = Number(document.getElementById("csize").value);
 const w = h;
 document.getElementById("cdisp").value=w;
-d3.select("#ten10").select('svg')
+svg
     .attr('width', (w+50))
     .attr('height', h)
     .classed("svg-container", true)    
-    .classed("svg-content-responsive", true); 
+    .classed("svg-content-responsive", true);
+    force.size([w, h]).resume();
 const yscale = d3.scaleLinear()
             .domain([0, 100])
             .range([0, (h*.8)]);
