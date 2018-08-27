@@ -145,11 +145,14 @@ svg.append("text")
   });
 });
 //frame function actually moves the circle around
+document.getElementById("csize").addEventListener("click", second);
+function second(){
+d3.selectAll("svg").remove();
+handler();
+};
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
-d3.selectAll("svg").remove();
-handler();
 svg.select('circle')
     .transition()
     .duration(400)
