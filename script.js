@@ -33,9 +33,12 @@ function tixt(){
 myapp.name=document.getElementsByName("name1")[0].value;
 };
 //handler function is for setting up d3
+window.addEventListener("load", first);
+function first(){
+document.getElementById("csize").value=Math.min(window.innerHeight, window.innerWidth);
+}
 window.addEventListener("load", handler);
 function handler() {
-document.getElementById("csize").value=Math.min(window.innerHeight, window.innerWidth);
 const h = document.getElementById("csize").value;
 const w = h;
 document.getElementById("cdisp").value=w;
@@ -149,11 +152,8 @@ svg.select('circle')
 const h = Number(document.getElementById("csize").value);
 const w = h;
 document.getElementById("cdisp").value = w;
-svg
-    .attr('width', (w+50))
-    .attr('height', h)
-    .classed("svg-container", true)    
-    .classed("svg-content-responsive", true);
+svg.remove();
+handler();
 svg.select('circle')
     .transition()
     .duration(400)
