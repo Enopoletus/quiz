@@ -39,7 +39,7 @@ document.getElementById("csize").value=Math.min(window.innerHeight, window.inner
 }
 window.addEventListener("load", handler);
 function handler() {
-const h = document.getElementById("csize").value;
+const h = Math.log(Number(document.getElementById("csize").value));
 const w = h;
 document.getElementById("cdisp").value=w;
 const svg = d3.select("#ten10")
@@ -148,10 +148,6 @@ svg.append("text")
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
-svg.select('circle')
-const h = Number(document.getElementById("csize").value);
-const w = h;
-document.getElementById("cdisp").value = w;
 svg.remove();
 handler();
 svg.select('circle')
