@@ -146,14 +146,12 @@ window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
 svg.select('circle')
-const h = Math.exp(Number(Math.log(document.getElementById("csize").value)));
+const h = Number(document.getElementById("csize").value);
 const w = h;
-document.getElementById("cdisp").value=Math.log(w);
+document.getElementById("cdisp").value = w;
 svg
     .attr('width', (w+50))
     .attr('height', h)
-    .attr("viewBox", "0 0 " + w + " " + h )
-    .attr("preserveAspectRatio", "xMinYMin meet")
     .classed("svg-container", true)    
     .classed("svg-content-responsive", true);
 svg.select('circle')
