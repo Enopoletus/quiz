@@ -39,7 +39,7 @@ document.getElementById("csize").value=Math.min(window.innerHeight, window.inner
 }
 window.addEventListener("load", handler);
 function handler() {
-const h = 100*Math.log(Number(document.getElementById("csize").value));
+const h = Number(document.getElementById("csize").value);
 const w = h;
 document.getElementById("cdisp").value=w;
 const svg = d3.select("#ten10")
