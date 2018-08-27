@@ -153,6 +153,7 @@ svg
     .attr('width', (w+50))
     .attr('height', h)
     .attr("viewBox", "0 0 " + w + " " + h )
+    .attr("preserveAspectRatio", "xMinYMin meet")
     .classed("svg-container", true)    
     .classed("svg-content-responsive", true);
 svg.select('circle')
