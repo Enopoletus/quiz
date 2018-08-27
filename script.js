@@ -149,22 +149,18 @@ svg.select('circle')
 const h = Number(document.getElementById("csize").value);
 const w = h;
 document.getElementById("cdisp").value=w;
+const force = d3.layout.force()
+              .nodes(nodes)
+              .links(links)
+              .charge(-1600)
+              .linkDistance(45)
+              .size([w, h]); 
 svg
     .attr('width', (w+50))
     .attr('height', h)
     .classed("svg-container", true)    
     .classed("svg-content-responsive", true);
     force.size([w, h]).resume();
-const yscale = d3.scaleLinear()
-            .domain([0, 100])
-            .range([0, (h*.8)]);
-const xscale = d3.scaleLinear()
-            .domain([0, 100])
-            .range([0, (w*.8)]);
-const x_axis = d3.axisTop()
-            .scale(xscale);
-const y_axis = d3.axisLeft()
-            .scale(yscale);
 svg.select('circle')
     .transition()
     .duration(400)
