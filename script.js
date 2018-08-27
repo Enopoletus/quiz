@@ -35,8 +35,8 @@ myapp.name=document.getElementsByName("name1")[0].value;
 //handler function is for setting up d3
 window.addEventListener("load", handler);
 function handler() {
-document.getElementById("csize").value=Math.min(window.innerHeight, window.innerWidth)
-const h = Number(document.getElementById("csize").value);
+document.getElementById("csize").value=Math.exp(Math.min(window.innerHeight, window.innerWidth));
+const h = Math.log(document.getElementById("csize").value);
 const w = h;
 document.getElementById("cdisp").value=w;
 const svg = d3.select("#ten10")
@@ -146,7 +146,7 @@ window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
 svg.select('circle')
-const h = Number(document.getElementById("csize").value);
+const h = Math.log(Number(document.getElementById("csize").value));
 const w = h;
 document.getElementById("cdisp").value=w;
 svg
