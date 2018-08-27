@@ -35,7 +35,7 @@ myapp.name=document.getElementsByName("name1")[0].value;
 //handler function is for setting up d3
 window.addEventListener("load", first);
 function first(){
-document.getElementById("csize").value=1.2*Math.min(window.innerHeight, window.innerWidth);
+document.getElementById("csize").value=1.1*Math.min(window.innerHeight, window.innerWidth);
 }
 window.addEventListener("load", handler);
 function handler() {
