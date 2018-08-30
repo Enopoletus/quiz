@@ -146,6 +146,7 @@ svg.append("text")
 });
 //frame function actually moves the circle around
 document.getElementById("csize").addEventListener("click", second);
+document.getElementById("csize").addEventListener("touchend", second);
 function second(){
 d3.selectAll("svg").remove();
 handler();
